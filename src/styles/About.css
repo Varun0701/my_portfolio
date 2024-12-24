@@ -1,0 +1,157 @@
+General Styling
+.about-page {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+}
+
+h1, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  color: #333;
+  font-size: 3rem;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #008cff, #00b2cc);
+  color: #fff;
+  padding: 40px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content {
+  flex: 1;
+  max-width: 60%;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.banner-content ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.banner-image {
+  flex: 1;
+  text-align: center;
+}
+
+.banner-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner-image img:hover {
+  transform: scale(1.1);
+}
+
+/* Highlights Section */
+.highlights {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.highlight-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.highlight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-card h3 {
+  font-size: 1.8rem;
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+.highlight-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.highlight-card ul li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+/* Extras Section */
+.extras {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.extras div {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.extras div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.extras h3 {
+  font-size: 1.8rem;
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+.extras ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extras ul li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlights {
+    flex-direction: column;
+  }
+
+  .extras {
+    flex-direction: column;
+  }
+}
